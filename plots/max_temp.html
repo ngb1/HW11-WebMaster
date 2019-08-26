@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 3px;
+  background-color: grey;
+  text-align: center;
+  display: block;
+}
+</style>
+<head>
+  <meta charset="UTF-8">
+  <title>Maximum Temperature</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+<body style="background-color: lightgray">
+
+<nav style = "background-color: white" class="navbar navbar-expand-lg navbar-light " >
+  <a style= "float: right; font-weight: bold; color: white; font-family: 'Times New Roman', Times, serif; font-size:25px; background-color: teal; padding: 10px ;" class="navbar-brand" href="C:/Users/nbust/OneDrive/Desktop/ASSIGNMENTS/HW11-WebMaster/index.html">Lattitude</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown" style = "float: right;" >
+    <ul class="navbar-nav" style = "float: right;" >
+    <!--  <li class="nav-item active">
+        <a class="nav-link" href="#">Lattitude <span class="sr-only">(current)</span></a>
+      </li>
+    -->
+      <li class="nav-item dropdown" style = "float: right;" >
+        <a class="nav-link dropdown-toggle" style = "float: right;" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Plots
+        </a>
+        <div class="dropdown-menu" style = "float: right;" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" style = "float: right;" href="C:\Users\nbust\OneDrive\Desktop\ASSIGNMENTS\HW11-WebMaster\plots\max_temp.html">Maximum Temperature</a>
+          <a class="dropdown-item" style = "float: right;" href="C:\Users\nbust\OneDrive\Desktop\ASSIGNMENTS\HW11-WebMaster\plots\humidity.html">Humidity</a>
+          <a class="dropdown-item" style = "float: right;" href="C:\Users\nbust\OneDrive\Desktop\ASSIGNMENTS\HW11-WebMaster\plots\cloudiness.html">Cloudiness</a>
+          <a class="dropdown-item" style = "float: right;" href="C:\Users\nbust\OneDrive\Desktop\ASSIGNMENTS\HW11-WebMaster\plots\wind_speed.html">Wind Speed</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" style = "float: right;"  href="C:\Users\nbust\OneDrive\Desktop\ASSIGNMENTS\HW11-WebMaster\solutions\comparison.html">Comparison</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" style = "float: right;"  href="C:\Users\nbust\OneDrive\Desktop\ASSIGNMENTS\HW11-WebMaster\solutions\data.html">Data</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+<div  class = "container" style="margin-top: 20px; margin-bottom: 20px" >
+  <div class = "row"> 
+    <div class="col-sm-8">
+      <div class="card">
+        <div class="card-body">
+          <h1 class="card-title" style = "font-weight: bold; color: teal; padding-block: white; font-family: 'Times New Roman', Times, serif; font-size:25px;"> 
+            <br>
+            Maximum Temperature vs. X
+            <br>
+            <br>
+          </h1>
+          <div class = "row"> 
+            <div class="col-md-12">
+              <img width="700" src= "C:\Users\nbust\OneDrive\Desktop\ASSIGNMENTS\HW11-WebMaster\Resources\assets\images\Fig1.png"></img>
+              <br>
+            </div>
+            <div class="col-md-12" >
+              <p>  As expected, the weather becomes significantly warmer as one approaches the equator (0 degree Latitude). More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of the year than the northern hemisphere. This may be due to the tilt of the earth at the time of the year this data was gathered.</p>
+              <p></p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h1 class="card-title" style = "font-weight: bold; color: teal; padding-block: white; font-family: 'Times New Roman', Times, serif; font-size:25px;"> 
+            <br>
+            Visualizations
+            <br>
+            <br>
+          </h1>
+          <div class = "row"> 
+              <div class="col-md-6">
+                <a href = "C:\Users\nbust\OneDrive\Desktop\ASSIGNMENTS\HW11-WebMaster\plots\max_temp.html" >
+
+                  <img width="150" style="border:5px solid teal" src= "C:\Users\nbust\OneDrive\Desktop\ASSIGNMENTS\HW11-WebMaster\Resources\assets\images\Fig1.png" > </img>
+                <br>
+                </a>
+              </div>
+              <div class="col-md-6">
+                <a href = "C:\Users\nbust\OneDrive\Desktop\ASSIGNMENTS\HW11-WebMaster\plots\humidity.html" >
+                  <img width="150"  src= "C:\Users\nbust\OneDrive\Desktop\ASSIGNMENTS\HW11-WebMaster\Resources\assets\images\Fig2.png"> </img>
+                <br>
+                </a>
+              </div>
+              <div class="col-md-12">
+              <p><br></p>
+              </div>
+              <div class="col-md-6">
+                <a href = "C:\Users\nbust\OneDrive\Desktop\ASSIGNMENTS\HW11-WebMaster\plots\cloudiness.html">
+                  <img width="150"  src= "C:\Users\nbust\OneDrive\Desktop\ASSIGNMENTS\HW11-WebMaster\Resources\assets\images\Fig3.png"  ></img>
+                <br>
+                </a>
+              </div>
+              <div class="col-md-6">
+                <a  href = "C:\Users\nbust\OneDrive\Desktop\ASSIGNMENTS\HW11-WebMaster\plots\wind_speed.html">
+                  <img width="150"  src= "C:\Users\nbust\OneDrive\Desktop\ASSIGNMENTS\HW11-WebMaster\Resources\assets\images\Fig4.png" ></img>
+                </a>
+                <br>
+              </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+  
+
+
+
+
+
+<footer class="page-footer font-small blue ">
+ <!-- Copyright -->
+ <div class="footer-copyright text-center py-3" style="font-size: 15px; font-weight: normal; color:whitesmoke; background-color: grey">© 2018 Copyright:
+    <a href="https://ngb1.github.io/index.html"> Nicolas Gomez Bustamante 2019</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+</body>
+
+
+
+
+</html>
